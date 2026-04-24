@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Feast - Taste the Real Flavours of Life</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">Flavour Feast</a>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-item">Home</a></li>
+            <li><a href="#menu" class="nav-item">Menu</a></li>
+            <li><a href="login.html" class="nav-item">Login / Signup</a></li>
+        </ul>
+        <div class="cart-icon-container" id="cart-icon" onclick="window.location.href='checkout.html'">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- Offer Banner -->
+    <div class="offer-banner">
+        🔥 20% OFF on all orders today! Use code: FEAST20 🔥
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Taste the Real <br>Flavours of Life</h1>
+        <p>Premium quality food delivered straight to your door. Experience dining like never before with our carefully curated menus.</p>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" id="search-input" placeholder="Search for your favorite food...">
+            <button class="btn btn-primary" id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">Order Now</a>
+            <a href="#menu" class="btn btn-outline">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2 class="section-title">Our Menu</h2>
+        
+        <div class="filters" id="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Chicken">Chicken</button>
+            <button class="filter-btn" data-filter="Mutton">Mutton</button>
+            <button class="filter-btn" data-filter="Veg">Veg</button>
+            <button class="filter-btn" data-filter="Fast Food">Fast Food</button>
+            <button class="filter-btn" data-filter="Drinks">Drinks</button>
+            <button class="filter-btn" data-filter="Desserts">Desserts</button>
+        </div>
+
+        <div class="food-grid" id="food-grid">
+            <!-- Food cards will be injected here by JS -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="#" class="logo">Flavour Feast</a>
+                <p>Delivering happiness, one meal at a time.</p>
+                <div class="social-links" style="margin-top: 1rem; display: flex; gap: 1rem; font-size: 1.2rem;">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="checkout.html">Cart</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> hello@flavourfeast.com</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Flavour Feast. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
